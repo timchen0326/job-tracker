@@ -11,7 +11,8 @@ export default function SignIn() {
       email,
       options: {
         // make sure this matches exactly what’s in your Supabase Redirect URLs
-        emailRedirectTo: 'https://timchen0326.github.io/job-tracker/',
+        emailRedirectTo: 'https://timchen0326.github.io/job-tracker/'
+,
       },
     })
 
