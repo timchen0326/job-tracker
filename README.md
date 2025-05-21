@@ -12,8 +12,8 @@ Hey there! Welcome to **Job Tracker**, a friendly little React app that helps yo
 
 ## Tech Stack
 
-- Bootstrapped with Create React App :contentReference[oaicite:0]{index=0}  
-- Built with TypeScript, HTML, CSS, and a bit of JavaScript :contentReference[oaicite:1]{index=1}  
+- Bootstrapped with Create React App
+- Built with TypeScript, HTML, CSS, and a bit of JavaScript
 - Styled using Tailwind CSS (with PostCSS)  
 - Backend powered by Supabase (Auth + PostgreSQL)  
 
