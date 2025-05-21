@@ -127,21 +127,23 @@ export default function JobList() {
                       {job.status}
                     </span>
                   </td>
-                  <td className="py-2 px-4 space-x-2">
-                    <button
-                      className="inline-flex items-center px-3 py-1 bg-gray-700 text-white rounded hover:bg-gray-800 transition"
-                      onClick={() => setEditing(job)}
-                    >
-                      <span className="material-icons mr-1" style={{ fontSize: 16 }}>edit</span>
-                      Edit
-                    </button>
-                    <button
-                      className="inline-flex items-center px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition"
-                      onClick={() => handleDelete(job.id)}
-                    >
-                      <span className="material-icons mr-1" style={{ fontSize: 16 }}>delete</span>
-                      Delete
-                    </button>
+                  <td className="py-2 px-4">
+                    <div className="flex flex-row space-x-2">
+                      <button
+                        className="inline-flex items-center px-3 py-1 bg-gray-700 text-white rounded hover:bg-gray-800 transition"
+                        onClick={() => setEditing(job)}
+                      >
+                        <span className="material-icons mr-1" style={{ fontSize: 16 }}>edit</span>
+                        Edit
+                      </button>
+                      <button
+                        className="inline-flex items-center px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition"
+                        onClick={() => handleDelete(job.id)}
+                      >
+                        <span className="material-icons mr-1" style={{ fontSize: 16 }}>delete</span>
+                        Delete
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))}
