@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/job-tracker/static/css/main.fc16b582.css",
-    "main.js": "/job-tracker/static/js/main.6194992d.js",
+    "main.js": "/job-tracker/static/js/main.af7e6c84.js",
     "static/js/952.e3e4c478.chunk.js": "/job-tracker/static/js/952.e3e4c478.chunk.js",
     "static/js/453.4d01f0aa.chunk.js": "/job-tracker/static/js/453.4d01f0aa.chunk.js",
     "index.html": "/job-tracker/index.html",
     "main.fc16b582.css.map": "/job-tracker/static/css/main.fc16b582.css.map",
-    "main.6194992d.js.map": "/job-tracker/static/js/main.6194992d.js.map",
+    "main.af7e6c84.js.map": "/job-tracker/static/js/main.af7e6c84.js.map",
     "952.e3e4c478.chunk.js.map": "/job-tracker/static/js/952.e3e4c478.chunk.js.map",
     "453.4d01f0aa.chunk.js.map": "/job-tracker/static/js/453.4d01f0aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc16b582.css",
-    "static/js/main.6194992d.js"
+    "static/js/main.af7e6c84.js"
   ]
 }
