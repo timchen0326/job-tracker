@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard'
 import { JSX } from 'react'
 import './App.css'
 import './index.css'
+import SignUp from './pages/SignUp'
 
 const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
   const user = useUser()
@@ -17,7 +18,13 @@ export default function App() {
     <AuthProvider>
       <HashRouter>
         <Routes>
+          <Route path="/dashboard" element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } />
           <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route
             path="/"
             element={
