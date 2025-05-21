@@ -6,15 +6,20 @@ export default function SignIn() {
 
   const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: window.location.origin,
+        // make sure this matches exactly what’s in your Supabase Redirect URLs
+        emailRedirectTo: 'https://timchen0326.github.io/job-tracker/',
       },
     })
 
-    if (error) alert(error.message)
-    else alert('Check your inbox for the login link!')
+    if (error) {
+      alert(error.message)
+    } else {
+      alert('Check your inbox for the login link!')
+    }
   }
 
   return (
