@@ -4,12 +4,20 @@ import { supabase } from '../lib/supabaseClient'
 export default function SignIn() {
   const [email, setEmail] = useState('')
 
+  // Helper to get correct redirect URL for local/dev and GitHub Pages
+  const getRedirectUrl = () => {
+    if (window.location.hostname === "timchen0326.github.io") {
+      return "https://timchen0326.github.io/job-tracker/";
+    }
+    return window.location.origin;
+  };
+
   const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: process.env.REACT_APP_MAGIC_LINK_REDIRECT || window.location.origin,
+        emailRedirectTo: getRedirectUrl(),
       },
     })
 
